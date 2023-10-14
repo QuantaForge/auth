@@ -1,0 +1,40 @@
+{
+    "name": "quantaforge/auth",
+    "description": "The QuantaForge Auth package.",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Tomáš Selič (Smisch-DEV)",
+            "email": "contact@smisch.sk"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-hash": "*",
+        "quantaforge/collections": "^1.0.0",
+        "quantaforge/contracts": "^1.0.0",
+        "quantaforge/http": "^1.0.0",
+        "quantaforge/macroable": "^1.0.0",
+        "quantaforge/queue": "^1.0.0",
+        "quantaforge/support": "^1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "QuantaForge\\Auth\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "10.x-dev"
+        }
+    },
+    "suggest": {
+        "quantaforge/console": "Required to use the auth:clear-resets command (^10.0).",
+        "quantaforge/queue": "Required to fire login / logout events (^10.0).",
+        "quantaforge/session": "Required to use the session based guard (^10.0)."
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
